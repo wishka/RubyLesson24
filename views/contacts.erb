@@ -1,0 +1,18 @@
+<h3>Our contacts</h3>
+<form action = "/contacts" method = "POST">
+  <div class="form-group row">
+    <label placeholder = "E-mail" for="staticEmail" class="col-sm-2 col-form-label"> Your e-mail</label>
+    <div class="col-sm-10">
+      <input name = "email" type="text"  id="staticEmail" placeholder=" E-mail">
+    </div>
+  </div>
+  <form class="was-validated">
+  <div class="mb-3">
+    <label for="validationTextarea">Textarea</label>
+    <textarea name = "message" class="form-control is-invalid" id="validationTextarea" placeholder="Текст вашего сообщения" required></textarea>
+    <div class="invalid-feedback">
+      Пожалуйста, введите свое сообщение.
+    </div>
+  </div>
+  <button type="submit" class="btn btn-warning">Отправить</button>
+</form>
